@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.1">
+  <Ad id="sample-ias-omid">
+    <InLine>
+      <AdSystem>Sample</AdSystem>
+      <AdTitle>IAS OMID Enabled Sample</AdTitle>
+      <Impression><![CDATA[https://example.com/imp]]></Impression>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:15</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">
+                <![CDATA[https://storage.googleapis.com/exoplayer-test-media-1/ads/for-test.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[https://example.com/start]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://example.com/q1]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://example.com/q2]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://example.com/q3]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://example.com/complete]]></Tracking>
+            </TrackingEvents>
+          </Linear>
+        </Creative>
+      </Creatives>
+      <!-- Open Measurement (OMSDK) verification (example IAS resource URL placeholder) -->
+      <AdVerifications>
+        <Verification vendor="integralads.com-omid">
+          <JavaScriptResource apiFramework="omid" browserOptional="true">
+            <![CDATA[https://verification.integralads.com/omsdk.js]]>
+          </JavaScriptResource>
+          <VerificationParameters><![CDATA[{{ optional-verification-params }}]]></VerificationParameters>
+        </Verification>
+      </AdVerifications>
+    </InLine>
+  </Ad>
+</VAST>
