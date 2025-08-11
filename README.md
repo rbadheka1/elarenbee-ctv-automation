@@ -1,4 +1,6 @@
-# elarenbee-firetv-ads-automation
+# elarenbee-ctv-automation
+
+**Note:** I'm just playing around with the framework for Fire TV automation.... This isn't an actual running framework.
 
 **Default path:** ExoPlayer + IMA **with OMSDK enabled via VAST `<AdVerifications>`**.  
 End-to-end **BDD** tests (Cucumber + Appium + TestNG) for Fire TV ads playback, OMID logging, and post-ad content resume. Includes simple perf logging.
